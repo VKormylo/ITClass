@@ -1,0 +1,144 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  margin: 50px 0 20px 0;
+  font-size: 24px;
+}
+
+.title::after {
+  position: absolute;
+  top: 15px;
+  right: -55px;
+  content: "";
+  background-color: #3374ff;
+  width: 50px;
+  height: 2px;
+}
+
+.logo {
+  padding-top: 5px;
+}
+
+.header-top {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-top.fixed {
+  position: fixed;
+  background-color: #1b1b1b;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 54px;
+  transition: all 0.2s;
+}
+
+.menu a:hover {
+  color: #cacaca;
+}
+
+.topmenu {
+  list-style: none;
+  display: flex;
+}
+
+.descr {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("https://img1.akspic.ru/originals/8/8/3/0/80388-apple-kompyuter_imac-yabloko-tehnologii-ofis-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 900px;
+}
+
+.descr-title {
+  padding: 250px 0 20px 0;
+  font-size: 48px;
+}
+
+.descr-text {
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content__item {
+  width: 310px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.content__item:hover {
+  transform: scale(1.1);
+}
+
+.content__item span {
+  margin-left: 10px;
+}
+
+.foto {
+  text-align: center;
+}
+
+.foto img {
+  width: 100%;
+}
+
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  height: auto;
+  background-color: #1b1b1b;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright__text {
+  padding: 20px 0;
+  text-align: center;
+  color: #acacac;
+}
+
+.copyright__text span {
+  color: #fff;
+}
